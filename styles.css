@@ -1,0 +1,92 @@
+/* Estilo Geral */
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    color: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+/* Estilo da Tabela */
+.tabela-periodica {
+    border-collapse: collapse;
+    margin: 20px;
+    width: auto;
+}
+
+thead th {
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #555;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #555;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Grupos */
+.grupo-1 { background-color: #ff9999; }
+.grupo-2 { background-color: #ffcc99; }
+.grupo-13 { background-color: #ffd700; }
+.grupo-14 { background-color: #ffeb99; }
+.grupo-15 { background-color: #c6ff99; }
+.grupo-16 { background-color: #99ffcc; }
+.grupo-17 { background-color: #99d6ff; }
+.grupo-18 { background-color: #d1b3ff; }
+.grupo-57-71 { background-color: #b3d9ff; }
+.grupo-89-103 { background-color: #2c91f5; }
+
+/* Metais de Transição */
+.bloco-d { background-color: #ffb3e6; }
+
+/* Lantanídeos e Actinídeos */
+.bloco-f { background-color: #b3d9ff; }
+.bloco-g { background-color: #2c91f5; }
+
+/* Hover */
+td:hover {
+    transform: scale(1.2);
+    background-color: #222;
+    color: #fff;
+}
+
+/* Não aplica hover nas células vazias */
+td:empty:hover {
+    background-color: transparent;
+    color: transparent;
+}
+
+td span {
+    display: block;
+}
+
+.numero {
+    font-size: 12px;
+    color: #131212;
+}
+
+.simbolo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Actinídeos{
+    color: #fff;
+}
+
+.Lantanídeos{
+    color: #fff;
+}
